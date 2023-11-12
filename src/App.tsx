@@ -23,7 +23,8 @@ function App() {
       typeSpeed: 1,
       showCursor: false,
       onComplete: () => {
-        buttons.current.style.display = 'block'
+        if (buttons.current)
+          (buttons.current as HTMLDivElement).style.display = 'block'
       },
     })
 
