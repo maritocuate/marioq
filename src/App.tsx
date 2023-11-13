@@ -4,6 +4,29 @@ import Typed from 'typed.js'
 import './App.css'
 import ButtonsBar from './components/ButtonsBar'
 
+const projects = [
+  {
+    text: 'Simpsons Screensaver',
+    url: 'https://simpsons-screensaver.vercel.app',
+  },
+  {
+    text: '3D Portfolio',
+    url: 'https://3d-portfolio-beta-five.vercel.app/',
+  },
+  {
+    text: 'Messenger Clone',
+    url: 'https://messenger-rho-taupe.vercel.app/',
+  },
+  {
+    text: 'Bartender App',
+    url: 'https://drinks-4f2d2f.netlify.app/',
+  },
+  {
+    text: 'Cripto Currencies',
+    url: 'https://hardcore-jones-d2ffc9.netlify.app/',
+  },
+]
+
 function App() {
   const typedText = useRef(null)
   const buttons = useRef(null)
@@ -36,7 +59,7 @@ function App() {
   return (
     <div className="container">
       <div className="text" ref={typedText}></div>
-      <ButtonsBar buttonsRef={buttons} />
+      <ButtonsBar buttonsRef={buttons} projects={projects} />
     </div>
   )
 }
