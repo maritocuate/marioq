@@ -6,6 +6,14 @@ import ButtonsBar from './components/ButtonsBar'
 
 const projects = [
   {
+    text: 'Cripto Currencies',
+    url: 'https://hardcore-jones-d2ffc9.netlify.app/',
+  },
+  {
+    text: 'Airbnb Clone',
+    url: 'https://eclectic-churros-0472f9.netlify.app/',
+  },
+  {
     text: 'Simpsons Screensaver',
     url: 'https://simpsons-screensaver.vercel.app',
   },
@@ -16,14 +24,6 @@ const projects = [
   {
     text: 'Messenger Clone',
     url: 'https://messenger-rho-taupe.vercel.app/',
-  },
-  {
-    text: 'Bartender App',
-    url: 'https://drinks-4f2d2f.netlify.app/',
-  },
-  {
-    text: 'Cripto Currencies',
-    url: 'https://hardcore-jones-d2ffc9.netlify.app/',
   },
 ]
 
@@ -37,13 +37,14 @@ function App() {
         'Hi, my name is Mario! <br />' +
           'Lately I working with React JS for over two years now using design patterns (HOC, Presentational, Provider, Compound, etc). <br />' +
           'I prefer Jest for unit testing, and I also use Cypress for end-to-end testing. <br />' +
-          'For some projects where I need to work server-side I use NextJS with Prisma for the NoSQL databases (MongoDB). <br /> ^1000' +
-          'Through the years I acquired strong understanding of vanilla JavaScript and general knowledge in popular libraries like jQuery, GSAP, TailwindCSS, etc. <br /> ^1000' +
+          'For some projects where I need to work server-side I use NextJS with Prisma for the NoSQL databases (MongoDB). <br /> ^100' +
+          'Through the years I acquired strong understanding of vanilla JavaScript and general knowledge in popular libraries like jQuery, GSAP, TailwindCSS, etc. <br /> ^100' +
           '<a class="link" href="https://www.linkedin.com/in/mario-quiroga-73299527/" target="_blank">LinkedIn</a><br/>' +
           '<br/><span class="comment">?</span> Select a project: <span class="comment">> - Use arrow-keys. Return to submit.</span><br/>',
       ],
-      startDelay: 1000,
-      typeSpeed: 1,
+      startDelay: 100,
+      typeSpeed: 0,
+      backSpeed: 0,
       showCursor: false,
       onComplete: () => {
         if (buttons.current)
