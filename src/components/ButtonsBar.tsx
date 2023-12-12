@@ -11,7 +11,10 @@ interface Project {
   url: string
 }
 
-const ButtonsBar = ({ buttonsRef, projects }: ButtonsBarProps) => {
+const ButtonsBar: React.FC<ButtonsBarProps> = ({
+  buttonsRef,
+  projects,
+}: ButtonsBarProps) => {
   const [selectedButtonIndex, setSelectedButtonIndex] = useState(0)
 
   const handleKeyDown: KeyboardEventHandler<HTMLDivElement> = useCallback(
@@ -28,13 +31,15 @@ const ButtonsBar = ({ buttonsRef, projects }: ButtonsBarProps) => {
           selectedButtonIndex > 0 && setSelectedButtonIndex(prev => prev - 1)
       }
     },
-    [selectedButtonIndex]
+    [selectedButtonIndex, projects]
   )
 
   useEffect(() => {
-    window.addEventListener('keydown', handleKeyDown)
+    const onKeyDown = (e: KeyboardEvent) => handleKeyDown(e as any)
+
+    window.addEventListener('keydown', onKeyDown)
     return () => {
-      window.removeEventListener('keydown', handleKeyDown)
+      window.removeEventListener('keydown', onKeyDown)
     }
   }, [handleKeyDown])
 
