@@ -10,6 +10,10 @@ const projects = [
     url: 'https://hardcore-jones-d2ffc9.netlify.app/',
   },
   {
+    text: 'Eme Bank',
+    url: 'https://emebank.vercel.app/',
+  },
+  {
     text: 'Airbnb Clone',
     url: 'https://eclectic-churros-0472f9.netlify.app/',
   },
