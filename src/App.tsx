@@ -1,5 +1,7 @@
 import { useEffect, useRef } from 'react'
+
 import Typed from 'typed.js'
+import ReactGA from 'react-ga4'
 
 import './App.css'
 import ButtonsBar from './components/ButtonsBar'
@@ -38,6 +40,13 @@ const projects = [
 function App() {
   const typedText = useRef(null)
   const buttons = useRef(null)
+
+  ReactGA.initialize('G-PH2YH04K6E')
+  ReactGA.send({
+    hitType: 'pageview',
+    page: '/home',
+    title: 'MQApps - Home Page',
+  })
 
   useEffect(() => {
     const typed = new Typed(typedText.current, {
