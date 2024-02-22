@@ -6,27 +6,31 @@ import ButtonsBar from './components/ButtonsBar'
 
 const projects = [
   {
-    text: 'Cripto Currencies',
+    text: 'Salvemos Patitas (NextJS)',
+    url: 'https://salvemospatitas.vercel.app/',
+  },
+  {
+    text: 'Cripto Currencies (ReactJS)',
     url: 'https://hardcore-jones-d2ffc9.netlify.app/',
   },
   {
-    text: 'Eme Bank',
-    url: 'https://emebank.vercel.app/',
+    text: 'MBank (NextJS)',
+    url: 'https://mbank-three.vercel.app/',
   },
   {
-    text: 'Airbnb Clone',
+    text: 'Airbnb Clone (NextJS)',
     url: 'https://eclectic-churros-0472f9.netlify.app/',
   },
   {
-    text: 'Simpsons Screensaver',
+    text: 'Simpsons Screensaver (ReactJS)',
     url: 'https://simpsons-screensaver.vercel.app',
   },
   {
-    text: '3D Portfolio',
+    text: '3D Portfolio (ReactJS)',
     url: 'https://3d-portfolio-beta-five.vercel.app/',
   },
   {
-    text: 'Messenger Clone',
+    text: 'Messenger Clone (NextJS)',
     url: 'https://messenger-rho-taupe.vercel.app/',
   },
 ]
